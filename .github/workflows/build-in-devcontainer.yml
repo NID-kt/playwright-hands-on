@@ -25,4 +25,5 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           imageName: ghcr.io/nid-roid/playwright-hands-on-devcontainer
+          cacheFrom: ghcr.io/nid-roid/playwright-hands-on-devcontainer
           runCmd: pnpm build
