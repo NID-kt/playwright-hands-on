@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Playwright Hands-on
 
-## Getting Started
+## はじめに
 
-First, run the development server:
+Playwright Hands-on は、Playwright でインストールから VRT（Visual Regression Testing）までを体験するためのハンズオン資料です。
+
+## セットアップ
+
+### 1. Node.js のインストール
+
+Playwright を利用するためには、Node.js が必要です。以下のリンクから Node.js をインストールしてください。
+
+- [Node.js](https://nodejs.org/)
+
+### 2. リポジトリーのクローン
+
+このリポジトリーは、VRT 対象のサンプルコードがすでに含まれています。以下のコマンドでリポジトリーをクローンしてください。
+今回のハンズオンでは、このリポジトリーに Playwright をインストールしていきます。
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:NID-roid/playwright-hands-on.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. パッケージのインストール
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+クローンしたリポジトリーに移動して、以下のコマンドでパッケージをインストールしてください。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+cd playwright-hands-on
+pnpm install
+```
 
-## Learn More
+なお、このハンズオンでは、パッケージの管理に `pnpm` を利用しています。`pnpm` がインストールされていない場合は、以下のコマンドでインストールしてください。
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install -g pnpm
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+それでははじめていきましょう！
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Playwright のインストール
 
-## Deploy on Vercel
+Playwright をインストールするには、以下のコマンドを実行してください。
+途中でいくつかの質問が表示されますが、すべてエンターキーを押してデフォルトの設定で進めてください。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm create playwright
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+このコマンドは依存関係の追加や設定ファイル（`playwright.config.ts`）の作成を行います。
+また Playwright が自動操作するためのブラウザー（Chromium、Firefox、WebKit）もインストールされます。
+普段お使いのブラウザーとは別にインストールする必要があります。
+
+### VS Code の拡張機能のインストール
+
+Playwright を利用する際に、VS Code の拡張機能をインストールすると大変便利です。
+VS Code をお使いの場合は、ぜひ以下の拡張機能をインストールしてください。
+
+- [Playwright Test for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
+
+## テストの実行
+
+Playwright でテストを実行するには、以下のコマンドを実行してください。
+
+```bash
+pnpm test
+```
+
+これで、Playwright でのテスト実行ができるようになりました。
+
+## VRT（Visual Regression Testing）
+
+Playwright には、スクリーンショットを取得して、それを比較する機能があります。これを利用して、VRT（Visual Regression Testing）を行うことができます。
+
+VRT を実行するには、以下のコマンドを実行してください。
+
+```bash
+pnpm test:vrt
+```
+
+これで、VRT のテスト実行ができるようになりました。
+
+## おわりに
+
+Playwright Hands-on は以上です。Playwright を使って、インストールから VRT までを体験しました。
+Playwright は、ブラウザーの自動操作やテストを行うための強力なツールです。
+ぜひ、Playwright を活用して、開発効率を向上させてください。
+
+## 参考
+
+- [Playwright](https://playwright.dev/)
+  - [Installation](https://playwright.dev/docs/intro)
+  - [Visual comparisons](https://playwright.dev/docs/test-snapshots)
