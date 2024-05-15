@@ -1,7 +1,11 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.7.1/schema.json",
   "files": {
-    "ignore": ["**/package.json", "**/pnpm-lock.yaml"]
+    "ignore": [
+      "**/package.json",
+      "**/pnpm-lock.yaml",
+      ".vscode/extensions.json"
+    ]
   },
   "vcs": {
     "enabled": true,
