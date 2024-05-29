@@ -12,7 +12,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "corepack enable && pnpm config set store-dir /home/node/.local/share/pnpm/store && pnpm install --frozen-lockfile"
+  "postCreateCommand": "sudo corepack enable && pnpm config set store-dir /home/node/.local/share/pnpm/store && pnpm install --frozen-lockfile"
 
   // Configure tool-specific properties.
   // "customizations": {},
