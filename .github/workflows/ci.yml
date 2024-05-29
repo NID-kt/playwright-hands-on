@@ -14,12 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
-        name: Set up pnpm
-        with:
-          version: latest
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
 
       - name: Set up Node.js
+
         uses: actions/setup-node@v4
         with:
           node-version: 20
