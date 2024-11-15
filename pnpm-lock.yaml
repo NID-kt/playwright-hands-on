@@ -58,8 +58,8 @@ importers:
         specifier: ^8
         version: 8.4.41
       tailwindcss:
-        specifier: ^3.4.9
-        version: 3.4.9
+        specifier: ^3.4.15
+        version: 3.4.15
       typescript:
         specifier: ^5
         version: 5.5.4
@@ -1358,8 +1358,8 @@ packages:
       node-notifier:
         optional: true
 
-  jiti@1.21.0:
-    resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
+  jiti@1.21.6:
+    resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
   js-tokens@4.0.0:
@@ -1461,6 +1461,10 @@ packages:
 
   micromatch@4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
+    engines: {node: '>=8.6'}
+
+  micromatch@4.0.8:
+    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
 
   mime-db@1.52.0:
@@ -1623,6 +1627,9 @@ packages:
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
+  picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
@@ -1668,14 +1675,14 @@ packages:
       ts-node:
         optional: true
 
-  postcss-nested@6.0.1:
-    resolution: {integrity: sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==}
+  postcss-nested@6.2.0:
+    resolution: {integrity: sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
 
-  postcss-selector-parser@6.0.16:
-    resolution: {integrity: sha512-A0RVJrX+IUkVZbW3ClroRWurercFhieevHB38sr2+l9eUClMqome3LmEmnhlNy+5Mr2EYN6B2Kaw9wYdd+VHiw==}
+  postcss-selector-parser@6.1.2:
+    resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -1687,6 +1694,10 @@ packages:
 
   postcss@8.4.41:
     resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.4.49:
+    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
 
   pretty-format@27.5.1:
@@ -1836,6 +1847,10 @@ packages:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
     engines: {node: '>=0.10.0'}
 
+  source-map-js@1.2.1:
+    resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
+    engines: {node: '>=0.10.0'}
+
   source-map-support@0.5.13:
     resolution: {integrity: sha512-SHSKFHadjVA5oR4PPqhtAVdcBWwRYVd6g6cAXnIbRiIwc2EhPrTuKUBdSLvlEKyIP3GCf89fltvcZiP9MMFA1w==}
 
@@ -1939,8 +1954,8 @@ packages:
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  tailwindcss@3.4.9:
-    resolution: {integrity: sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==}
+  tailwindcss@3.4.15:
+    resolution: {integrity: sha512-r4MeXnfBmSOuKUWmXe6h2CcyfzJCEk4F0pptO5jlnYSIViUkVmsawj80N5h2lO3gwcmSb4n3PuN+e+GC1Guylw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3122,7 +3137,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.7
+      micromatch: 4.0.8
 
   fast-json-stable-stringify@2.1.0: {}
 
@@ -3663,7 +3678,7 @@ snapshots:
       - supports-color
       - ts-node
 
-  jiti@1.21.0: {}
+  jiti@1.21.6: {}
 
   js-tokens@4.0.0: {}
 
@@ -3784,6 +3799,11 @@ snapshots:
   merge2@1.4.1: {}
 
   micromatch@4.0.7:
+    dependencies:
+      braces: 3.0.3
+      picomatch: 2.3.1
+
+  micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
@@ -3927,6 +3947,8 @@ snapshots:
 
   picocolors@1.0.1: {}
 
+  picocolors@1.1.1: {}
+
   picomatch@2.3.1: {}
 
   pidtree@0.6.0: {}
@@ -3939,31 +3961,31 @@ snapshots:
     dependencies:
       find-up: 4.1.0
 
-  postcss-import@15.1.0(postcss@8.4.41):
+  postcss-import@15.1.0(postcss@8.4.49):
     dependencies:
-      postcss: 8.4.41
+      postcss: 8.4.49
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-js@4.0.1(postcss@8.4.41):
+  postcss-js@4.0.1(postcss@8.4.49):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.41
+      postcss: 8.4.49
 
-  postcss-load-config@4.0.2(postcss@8.4.41):
+  postcss-load-config@4.0.2(postcss@8.4.49):
     dependencies:
       lilconfig: 3.1.2
       yaml: 2.5.0
     optionalDependencies:
-      postcss: 8.4.41
+      postcss: 8.4.49
 
-  postcss-nested@6.0.1(postcss@8.4.41):
+  postcss-nested@6.2.0(postcss@8.4.49):
     dependencies:
-      postcss: 8.4.41
-      postcss-selector-parser: 6.0.16
+      postcss: 8.4.49
+      postcss-selector-parser: 6.1.2
 
-  postcss-selector-parser@6.0.16:
+  postcss-selector-parser@6.1.2:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -3981,6 +4003,12 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
+
+  postcss@8.4.49:
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
 
   pretty-format@27.5.1:
     dependencies:
@@ -4109,6 +4137,8 @@ snapshots:
 
   source-map-js@1.2.0: {}
 
+  source-map-js@1.2.1: {}
+
   source-map-support@0.5.13:
     dependencies:
       buffer-from: 1.1.2
@@ -4202,7 +4232,7 @@ snapshots:
 
   symbol-tree@3.2.4: {}
 
-  tailwindcss@3.4.9:
+  tailwindcss@3.4.15:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -4212,18 +4242,18 @@ snapshots:
       fast-glob: 3.3.2
       glob-parent: 6.0.2
       is-glob: 4.0.3
-      jiti: 1.21.0
+      jiti: 1.21.6
       lilconfig: 2.1.0
-      micromatch: 4.0.7
+      micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
-      picocolors: 1.0.1
-      postcss: 8.4.41
-      postcss-import: 15.1.0(postcss@8.4.41)
-      postcss-js: 4.0.1(postcss@8.4.41)
-      postcss-load-config: 4.0.2(postcss@8.4.41)
-      postcss-nested: 6.0.1(postcss@8.4.41)
-      postcss-selector-parser: 6.0.16
+      picocolors: 1.1.1
+      postcss: 8.4.49
+      postcss-import: 15.1.0(postcss@8.4.49)
+      postcss-js: 4.0.1(postcss@8.4.49)
+      postcss-load-config: 4.0.2(postcss@8.4.49)
+      postcss-nested: 6.2.0(postcss@8.4.49)
+      postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
     transitivePeerDependencies:
